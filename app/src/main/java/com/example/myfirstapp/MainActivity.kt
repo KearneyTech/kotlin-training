@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.myfirstapp.retrofit.RetrofitActivity
 import com.example.myfirstapp.utils.log
 
 const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
@@ -36,6 +37,12 @@ class MainActivity : AppCompatActivity() {
     fun linkActivityCoroutineUI(view: View){
         log("Start linkActivityCoroutineUI")
         val intent = Intent(this, CoroutineUIActivity::class.java).apply {  }
+        startActivity(intent)
+    }
+
+    fun linkActivityRetrofit(view: View){
+        log("Start linkActivityRetrofit")
+        val intent = Intent(this, RetrofitActivity::class.java).apply {  }
         startActivity(intent)
     }
 }

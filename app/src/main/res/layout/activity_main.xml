@@ -38,4 +38,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:onClick="linkActivityCoroutineUI"/>
+    <Button
+            android:text="Retrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_link_retrofit" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/button_link_coroutine_ui"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:onClick="linkActivityRetrofit"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
