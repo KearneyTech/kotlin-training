@@ -18,7 +18,7 @@ class PostItemAdapter(val postList: List<Post>, val context: Context) :
     }
 
     override fun getItemCount(): Int {
-        return 10
+        return postList.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
